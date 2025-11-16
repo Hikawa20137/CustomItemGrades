@@ -14,6 +14,53 @@ You are free to modify, improve, or redistribute it as long as the original auth
 
 ---
 
+## 🛠️ How to Add Custom Grades
+
+To add or modify grades, edit the file **`CustomItemGrades.lua`** and go to the **top of the file**, inside the `GRADES` table:
+
+-- ==========================================================
+-- GRADES CONFIG
+-- ==========================================================
+
+local GRADES = {
+    [1]  = { text = "Forged by Flames",       color = "|cffe1880f" },
+    [2]  = { text = "Draconic Heritage",      color = "|cffc27ba0" },
+    [3]  = { text = "Marked by the Loas",     color = "|cff38761d" },
+    [4]  = { text = "Old Gods Corruption",    color = "|cffe06666" },
+    [5]  = { text = "Veiled by Death",        color = "|cffc90076" },
+    [6]  = { text = "Mythic",                 color = "|cff00ffb6" },
+    [7]  = { text = "Mythic",                 color = "|cff00ffab" },
+    [8]  = { text = "Mythic",                 color = "|cff00FF00" },
+    [9]  = { text = "Old Continent Crafting", color = "|cff00ff96" },
+    [10] = { text = "Classic PvP Season",     color = "|cff00ff8c" },
+
+text = The title displayed under the item name
+
+color = The color code (in WoW format)
+
+You can freely add, remove, or modify entries.
+
+---
+
+##📦 How to Assign a Grade to an Item
+
+To assign a grade to an item, go to line 22 of CustomItemGrades.lua, inside the ITEMS_WITH_GRADES table:
+
+local ITEMS_WITH_GRADES = {
+    -- Keys
+    [70001] = 8, -- Mythic+ Key
+    -- Dungeon example
+    -- Deadmines
+    [70002] = 1, -- Taskmaster Axe
+
+The key (e.g., 70002) is the item entry ID
+
+The value (e.g., 1) corresponds to the grade number in the GRADES table
+
+Add as many items as you wish following the same structure.
+
+---
+
 ## 🖼️ Preview
 
 Here is an image:
@@ -46,6 +93,53 @@ Vous pouvez bien sûr le modifier, l’améliorer ou le redistribuer tant que la
 - Ajout d’un **grade Mythique** personnalisable sous le nom des items  
 - Facilement intégrable dans n'importe quel serveur  
 - Compatible avec les items existants
+
+---
+
+##🛠️ Comment ajouter des grades personnalisés
+
+Pour ajouter ou modifier des grades, ouvrez le fichier CustomItemGrades.lua et allez au début du fichier, dans le tableau GRADES :
+
+-- ==========================================================
+-- GRADES CONFIG
+-- ==========================================================
+
+local GRADES = {
+    [1]  = { text = "Forgé par les Flammes",              color = "|cffe1880f" },
+    [2]  = { text = "Héritage Draconien",                 color = "|cffc27ba0" },
+    [3]  = { text = "Marqué par les Loas",                color = "|cff38761d" },
+    [4]  = { text = "Corromption des Dieux très Anciens", color = "|cffe06666" },
+    [5]  = { text = "Voilé par la Mort",                  color = "|cffc90076" },
+    [6]  = { text = "Mythique",                            color = "|cff00ffb6" },
+    [7]  = { text = "Mythique",                            color = "|cff00ffab" },
+    [8]  = { text = "Mythique",                            color = "|cff00FF00" },
+    [9]  = { text = "Artisanat du vieux continent",        color = "|cff00ff96" },
+    [10] = { text = "Saison Classic PvP",                  color = "|cff00ff8c" },
+
+text = Le texte affiché sous le nom de l’objet
+
+color = Le code couleur
+
+Vous pouvez ajouter autant de grades que vous le souhaitez.
+
+---
+
+##📦 Comment attribuer un grade à un item
+
+Pour attribuer un grade à un objet, allez à la ligne 22 du fichier CustomItemGrades.lua, dans le tableau ITEMS_WITH_GRADES :
+
+local ITEMS_WITH_GRADES = {
+    -- Clés
+    [70001] = 8, -- clé MM+
+    -- Liste des Donjons
+    -- Mortemines
+    [70002] = 1, -- Taskmaster Axe
+
+La clé (ex : 70002) est l’entry ID de l’objet
+
+La valeur (ex : 1) correspond au numéro du grade dans le tableau GRADES
+
+Ajoutez autant d’objets que nécessaire.
 
 ---
 
