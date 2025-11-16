@@ -1,5 +1,7 @@
 # Addon: Custom Mythic Grades
 
+# [EN]
+
 ## ⚙️ This addon is fully compatible with World of Warcraft 3.3.5 (WotLK).
 
 I present to you my first addon, which allows you to display **customizable additional grades** for servers that want to add **Mythic-style grades** to replace the **Heroic** grade under item names.
@@ -74,6 +76,8 @@ If you want to contribute, report a bug, or suggest improvements, feel free to o
 ---
 
 # Addon : Grades Mythiques Personnalisés
+
+# [FR]
 
 ## ⚙️ Cet addon est entièrement compatible avec World of Warcraft 3.3.5 (WotLK).
 
