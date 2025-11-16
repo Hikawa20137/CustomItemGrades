@@ -148,3 +148,151 @@ Ce projet est libre d'utilisation, mais merci de **ne pas vous en attribuer la c
 
 ## 💬 Contact
 Si vous souhaitez contribuer, rapporter un bug ou proposer une amélioration, n’hésitez pas à ouvrir une *issue* sur GitHub !
+
+# Addon: Rangos Míticos Personalizados
+
+# [🇪🇸]
+
+## ⚙️ Este addon es totalmente compatible con World of Warcraft 3.3.5 (WotLK).
+
+Les presento mi primer addon, que permite mostrar rangos adicionales personalizables para servidores que quieran añadir rangos de tipo Mítico en lugar del rango Heroico bajo los nombres de los objetos.
+
+**⚠️ Por favor, no se atribuyan la autoría de este addon si lo utilizan.**  
+Por supuesto, pueden modificarlo, mejorarlo o redistribuirlo siempre que se respete la paternidad.
+
+---
+
+## 📌 Funcionalidades
+- Añade un rango Mítico personalizable debajo del nombre de los ítems 
+- Fácilmente integrable en cualquier servidor
+- Compatible con los ítems existentes
+
+---
+
+##🛠️ Cómo añadir rangos personalizados
+
+Para añadir o modificar rangos, abra el archivo CustomItemGrades.lua y vaya al inicio del archivo, en la tabla GRADES:
+
+    [1]  = { text = "Forjado por las Llamas",              color = "|cffe1880f" },
+    [2]  = { text = "Herencia Dracónica",                 color = "|cffc27ba0" },
+    [3]  = { text = "Marcado por los Loas",               color = "|cff38761d" },
+    [4]  = { text = "Corrupción de los Dioses Antiguos", color = "|cffe06666" },
+    [5]  = { text = "Velado por la Muerte",               color = "|cffc90076" },
+    [6]  = { text = "Mítico",                             color = "|cff00ffb6" },
+    [7]  = { text = "Mítico",                             color = "|cff00ffab" },
+    [8]  = { text = "Mítico",                             color = "|cff00FF00" },
+    [9]  = { text = "Artesanía del viejo continente",     color = "|cff00ff96" },
+    [10] = { text = "Temporada Classic PvP",              color = "|cff00ff8c" },
+
+text = El texto que se mostrará debajo del nombre del objeto
+
+color = El código de color
+
+Pueden añadir tantos rangos como deseen.
+
+---
+
+## 📦 Cómo asignar un rango a un ítem
+
+Para asignar un rango a un objeto, vaya a la línea 22 del archivo CustomItemGrades.lua, en la tabla ITEMS_WITH_GRADES:
+
+       [70001] = 8, -- llave MM+
+       [70002] = 1, -- Hacha del Maestro de Tareas
+
+La clave (ej.: 70002) es el entry ID del objeto
+
+El valor (ej.: 1) corresponde al número del rango en la tabla GRADES
+
+Agregue tantos objetos como sea necesario.
+
+---
+
+## 🖼️ Vista previa
+
+Aquí hay una imagen:
+
+![Vista previa del addon](image.png)  
+
+---
+
+## 📄 Licencia & Atribución
+Este proyecto es libre de uso, **pero por favor no se atribuyan su creación**.
+
+---
+
+## 💬 Contacto
+Si desea contribuir, reportar un error o proponer una mejora, no dude en abrir un issue en GitHub.
+
+# Аддон: Персонализированные Мифические Звания
+
+## [RU]
+
+## ⚙️ Этот аддон полностью совместим с World of Warcraft 3.3.5 (WotLK).
+
+Представляю вам мой первый аддон, который позволяет отображать дополнительные настраиваемые звания для серверов, которые хотят добавить звания типа Мифическое вместо звания Героическое под названиями предметов.
+
+**⚠️ Пожалуйста, не приписывайте себе создание этого аддона, если вы его используете.**  
+Вы, конечно, можете модифицировать, улучшать или распространять его, если соблюдается авторство.
+
+---
+
+## 📌 Возможности
+- Добавление мифического звания под названием предмета
+- Легко интегрируется на любой сервер
+- Совместим с существующими предметами
+
+---
+
+##🛠️ Как добавить персонализированные звания
+
+Чтобы добавить или изменить звания, откройте файл CustomItemGrades.lua и перейдите в начало файла, в таблицу GRADES:
+
+    [1]  = { text = "Кованный огнём",                     color = "|cffe1880f" },
+    [2]  = { text = "Драконий Наследие",                  color = "|cffc27ba0" },
+    [3]  = { text = "Отмечен Лоа",                        color = "|cff38761d" },
+    [4]  = { text = "Коррупция Древних Богов",           color = "|cffe06666" },
+    [5]  = { text = "Окутан Смертью",                     color = "|cffc90076" },
+    [6]  = { text = "Мифический",                         color = "|cff00ffb6" },
+    [7]  = { text = "Мифический",                         color = "|cff00ffab" },
+    [8]  = { text = "Мифический",                         color = "|cff00FF00" },
+    [9]  = { text = "Ремесло Старого Континента",        color = "|cff00ff96" },
+    [10] = { text = "Сезон Classic PvP",                  color = "|cff00ff8c" },
+
+text = Текст, который отображается под названием предмета
+
+color = Цветовой код
+
+Можно добавлять сколько угодно звания.
+
+---
+
+## 📦 Как присвоить звание предмету
+
+Чтобы присвоить звание предмету, перейдите к строке 22 файла CustomItemGrades.lua, в таблицу ITEMS_WITH_GRADES:
+
+       [70001] = 8, -- ключ MM+
+       [70002] = 1, -- Топор Мастера Задач
+
+Ключ (например, 70002) = entry ID предмета
+
+Значение (например, 1) = номер звания в таблице GRADES
+
+Добавляйте столько предметов, сколько нужно.
+
+---
+
+## 🖼️ Предварительный просмотр
+
+Вот изображение:n:
+
+![Предварительный просмотр аддона](image.png)  
+
+---
+
+## 📄 Лицензия и авторство
+Проект свободен для использования, но **пожалуйста, не приписывайте себе его создание**.
+
+---
+
+## 💬 Контакт
+Если вы хотите внести вклад, сообщить об ошибке или предложить улучшение, создайте issue на GitHub.
