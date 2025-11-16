@@ -18,10 +18,6 @@ You are free to modify, improve, or redistribute it as long as the original auth
 
 To add or modify grades, edit the file **`CustomItemGrades.lua`** and go to the **top of the file**, inside the `GRADES` table:
 
--- ==========================================================
--- GRADES CONFIG
--- ==========================================================
-
 local GRADES = {
     [1]  = { text = "Forged by Flames",       color = "|cffe1880f" },
     [2]  = { text = "Draconic Heritage",      color = "|cffc27ba0" },
@@ -46,11 +42,7 @@ You can freely add, remove, or modify entries.
 
 To assign a grade to an item, go to line 22 of CustomItemGrades.lua, inside the ITEMS_WITH_GRADES table:
 
-local ITEMS_WITH_GRADES = {
-    -- Keys
     [70001] = 8, -- Mythic+ Key
-    -- Dungeon example
-    -- Deadmines
     [70002] = 1, -- Taskmaster Axe
 
 The key (e.g., 70002) is the item entry ID
@@ -100,10 +92,6 @@ Vous pouvez bien sûr le modifier, l’améliorer ou le redistribuer tant que la
 
 Pour ajouter ou modifier des grades, ouvrez le fichier CustomItemGrades.lua et allez au début du fichier, dans le tableau GRADES :
 
--- ==========================================================
--- GRADES CONFIG
--- ==========================================================
-
 local GRADES = {
     [1]  = { text = "Forgé par les Flammes",              color = "|cffe1880f" },
     [2]  = { text = "Héritage Draconien",                 color = "|cffc27ba0" },
@@ -128,11 +116,7 @@ Vous pouvez ajouter autant de grades que vous le souhaitez.
 
 Pour attribuer un grade à un objet, allez à la ligne 22 du fichier CustomItemGrades.lua, dans le tableau ITEMS_WITH_GRADES :
 
-local ITEMS_WITH_GRADES = {
-    -- Clés
     [70001] = 8, -- clé MM+
-    -- Liste des Donjons
-    -- Mortemines
     [70002] = 1, -- Taskmaster Axe
 
 La clé (ex : 70002) est l’entry ID de l’objet
