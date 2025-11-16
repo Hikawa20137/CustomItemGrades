@@ -1,6 +1,6 @@
 # Addon: Custom Mythic Grades
 
-##⚙️ This addon is fully compatible with World of Warcraft 3.3.5 (WotLK).
+## ⚙️ This addon is fully compatible with World of Warcraft 3.3.5 (WotLK).
 
 I present to you my first addon, which allows you to display **customizable additional grades** for servers that want to add **Mythic-style grades** to replace the **Heroic** grade under item names.
 
@@ -39,7 +39,7 @@ You can freely add, remove, or modify entries.
 
 ---
 
-##📦 How to Assign a Grade to an Item
+## 📦 How to Assign a Grade to an Item
 
 To assign a grade to an item, go to line 22 of CustomItemGrades.lua, inside the ITEMS_WITH_GRADES table:
 
@@ -114,7 +114,7 @@ Vous pouvez ajouter autant de grades que vous le souhaitez.
 
 ---
 
-##📦 Comment attribuer un grade à un item
+## 📦 Comment attribuer un grade à un item
 
 Pour attribuer un grade à un objet, allez à la ligne 22 du fichier CustomItemGrades.lua, dans le tableau ITEMS_WITH_GRADES :
 
