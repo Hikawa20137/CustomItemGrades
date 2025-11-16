@@ -18,7 +18,6 @@ You are free to modify, improve, or redistribute it as long as the original auth
 
 To add or modify grades, edit the file **`CustomItemGrades.lua`** and go to the **top of the file**, inside the `GRADES` table:
 
-local GRADES = {
     [1]  = { text = "Forged by Flames",       color = "|cffe1880f" },
     [2]  = { text = "Draconic Heritage",      color = "|cffc27ba0" },
     [3]  = { text = "Marked by the Loas",     color = "|cff38761d" },
@@ -92,7 +91,6 @@ Vous pouvez bien sûr le modifier, l’améliorer ou le redistribuer tant que la
 
 Pour ajouter ou modifier des grades, ouvrez le fichier CustomItemGrades.lua et allez au début du fichier, dans le tableau GRADES :
 
-local GRADES = {
     [1]  = { text = "Forgé par les Flammes",              color = "|cffe1880f" },
     [2]  = { text = "Héritage Draconien",                 color = "|cffc27ba0" },
     [3]  = { text = "Marqué par les Loas",                color = "|cff38761d" },
