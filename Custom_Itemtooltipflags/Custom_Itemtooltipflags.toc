@@ -1,5 +1,5 @@
 ## Interface: 30300
-## Title: Blizzard Custom Item Grades
+## Title: Custom Item tooltip flags
 ## Notes: Module système interne
 ## DefaultState: enabled
 
