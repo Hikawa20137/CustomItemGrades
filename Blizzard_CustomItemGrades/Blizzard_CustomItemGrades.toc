@@ -1,0 +1,6 @@
+## Interface: 30300
+## Title: Blizzard Custom Item Grades
+## Notes: Module système interne
+## DefaultState: enabled
+
+CustomItemGrades.lua
