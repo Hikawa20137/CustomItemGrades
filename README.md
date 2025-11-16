@@ -18,7 +18,7 @@ You are free to modify, improve, or redistribute it as long as the original auth
 
 Here is an image:
 
-![Addon Preview](https://ibb.co/KRjb7Rf)  
+![Addon Preview](<a href="https://imgbb.com/"><img src="https://i.ibb.co/FNbmJNy/image.png" alt="image" border="0"></a>)  
 
 
 ---
